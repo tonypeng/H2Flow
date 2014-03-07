@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ground_block" tilewidth="32" tileheight="32">
+  <image source="block.png" trans="ff00ff"/>
+ </tileset>
+ <tileset firstgid="2" name="pipe_finish" tilewidth="32" tileheight="32">
+  <image source="pipe.png" trans="ff00ff"/>
+ </tileset>
+ <layer name="Blocks" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIB0wQjE5gJFMTK69g0UvJf4lJ6zR9TKRqZdcDAAfUVtCWAIAAA==
+  </data>
+ </layer>
+ <objectgroup name="Player props" width="15" height="10">
+  <object name="spawn" x="32" y="32"/>
+ </objectgroup>
+</map>

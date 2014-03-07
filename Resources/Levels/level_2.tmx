@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset_basic" tilewidth="32" tileheight="32">
+  <image source="tileset_basic.png" trans="ff00ff"/>
+ </tileset>
+ <tileset firstgid="17" name="meta_tiles" tilewidth="32" tileheight="32">
+  <image source="meta.png" trans="ff00ff"/>
+  <tile id="1">
+   <properties>
+    <property name="Collidable" value=""/>
+    <property name="Collidable" value=""/>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="19" name="pipe" tilewidth="32" tileheight="32">
+  <image source="pipe.png" trans="ff00ff"/>
+ </tileset>
+ <layer name="Blocks" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NmYGBgJBMzkyiOroYYTK7biHEHAxpNin5CerHpx6UWmzi2MEBXh89uXPYwkKGPHAwAB2xD4FgCAAA=
+  </data>
+ </layer>
+ <layer name="meta" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAxNiIB8IkSiOroYYTAkYyvqpFQYDBQDGz16DWAIAAA==
+  </data>
+ </layer>
+ <objectgroup name="Player props" width="15" height="10">
+  <object name="spawn" x="48" y="48"/>
+  <object name="finish" x="464" y="176"/>
+  <object name="waterProps" x="0" y="0">
+   <properties>
+    <property name="x_length" value="5"/>
+    <property name="y_length" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="finish" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAW0BsID7YABAABkJwoPWAIAAA==
+  </data>
+ </layer>
+</map>

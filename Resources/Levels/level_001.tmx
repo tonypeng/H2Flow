@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset_basic" tilewidth="32" tileheight="32">
+  <image source="tileset_basic.png" trans="ff00ff"/>
+ </tileset>
+ <tileset firstgid="17" name="pipe_finish" tilewidth="32" tileheight="32">
+  <image source="pipe.png" trans="ff00ff"/>
+ </tileset>
+ <tileset firstgid="18" name="meta_tiles" tilewidth="32" tileheight="32">
+  <image source="meta.png" trans="ff00ff"/>
+  <tile id="1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Blocks" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIB0wQjE5gJEMjK6fXLeSohddDzl60d1Ain/xhQGxbqCGXnIxAInXFEVYAgAA
+  </data>
+ </layer>
+ <objectgroup name="Player props" width="15" height="10">
+  <object name="spawn" x="32" y="32"/>
+  <object name="finish" x="80" y="272"/>
+  <object name="waterProps" x="0" y="0">
+   <properties>
+    <property name="x_length" value="5"/>
+    <property name="y_length" value="10"/>
+   </properties>
+  </object>
+  <object name="label1" x="32" y="128">
+   <properties>
+    <property name="content" value="Hi there! Tilt the device to make the water flow to the pipe below!"/>
+    <property name="fontsize" value="12"/>
+    <property name="offset_x" value="145"/>
+    <property name="offset_y" value="10"/>
+   </properties>
+  </object>
+  <object name="" x="771" y="533"/>
+ </objectgroup>
+ <layer name="finish" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAUjAQjS2T4Abp1071gCAAA=
+  </data>
+ </layer>
+ <layer name="meta" width="15" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIB0Ik6EHXa8wCZgSu5HNIEUvuh5y9KK7gRT/4gsDUtxAqV5yMAgAAKkTw6JYAgAA
+  </data>
+ </layer>
+</map>
